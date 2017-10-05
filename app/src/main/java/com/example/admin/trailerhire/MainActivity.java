@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button trailer,calculator;
+    Button trailer,calculator,option;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,15 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        option = (Button)findViewById(R.id.options);
+        option.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, OptionsActivity.class);
+                startActivity(i);
 
+            }
+        });
 
 
 

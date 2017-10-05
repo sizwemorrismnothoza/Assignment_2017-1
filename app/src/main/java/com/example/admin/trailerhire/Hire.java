@@ -2,12 +2,16 @@ package com.example.admin.trailerhire;
 
 public class Hire {
 
-    private final double basicCost = 300;
+    private final double basicCost = 300.00;
     private final double surcharge = 0.05;
     private final double discount = 0.11;
     private int amount;
     private int kiloMeters;
     private double totalCost = 0.00;
+
+    public Hire() {
+
+    }
 
     public Hire(int amount, int kiloMeters) {
         this.amount = amount;
@@ -15,15 +19,9 @@ public class Hire {
 
     }
 
-    public int getKiloMeters() {
-        return kiloMeters;
+    public double getBasicCost() {
+        return basicCost;
     }
-
-    public void setKiloMeters(int kiloMeters) {
-        this.kiloMeters = kiloMeters;
-    }
-
-
     public double getTotalCost() {
         double amountDue = kiloMeters * amount;
         totalCost =basicCost + amountDue;
@@ -36,24 +34,7 @@ public class Hire {
             totalCost -= amountDue*discount;
             return totalCost;
         }
-       return 0;
-    }
-
-    public void setTotalCost(double totalCost) {
-        this.totalCost = totalCost;
-    }
-
-
-    public double getBasicCost() {
-        return basicCost;
-    }
-
-    public int getAmount() {
-        return amount;
-    }
-
-    public void setAmount(int amount) {
-        this.amount = amount;
+       return totalCost;
     }
 
 

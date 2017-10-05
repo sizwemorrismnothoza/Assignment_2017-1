@@ -5,36 +5,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_margin="16dp"
     tools:context="com.example.admin.trailerhire.TrailerActivity">
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="something here"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="something here"/>
-    <EditText
-        android:id="@+id/edt_amount"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter hours"/>
+        android:layout_marginBottom="16dp"
+        android:text="My Project"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Final Semester"
+    android:layout_marginBottom="4dp"/>
     <EditText
         android:id="@+id/edt_kilometer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter KMs"/>
+    <EditText
+        android:id="@+id/edt_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter hours"/>
 
     <Button
         android:id="@+id/btn_hire"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:elevation="15dp"
         android:text="Calculate"
         android:textAllCaps="false"/>
     <TextView
         android:id="@+id/txt_result"
         android:text="nvdvcnjcvdfbnvi"
+        android:layout_margin="24dp"
+        android:layout_gravity="center_horizontal"
         android:visibility="gone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

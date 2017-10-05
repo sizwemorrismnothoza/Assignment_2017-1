@@ -12,6 +12,7 @@ public class TrailerActivity extends AppCompatActivity {
     Button calculate;
     TextView total_cost;
     EditText amount, kilometers;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +22,7 @@ public class TrailerActivity extends AppCompatActivity {
         kilometers=(EditText)findViewById(R.id.edt_kilometer);
         total_cost = (TextView)findViewById(R.id.txt_result);
         calculate = (Button)findViewById(R.id.btn_hire);
+
         calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -29,7 +31,7 @@ public class TrailerActivity extends AppCompatActivity {
                 int kiloMetersEntered= Integer.parseInt(kilometers.getText().toString());
                 Hire hire = new Hire(amountEntered,kiloMetersEntered);
                 total_cost.setVisibility(view.VISIBLE);
-                total_cost.setText("Total Amount Due:  "+hire.getTotalCost());
+                total_cost.setText("Total Amount Due:  "+"R"+hire.getTotalCost());
             }
         });
 
