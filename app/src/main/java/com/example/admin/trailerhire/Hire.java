@@ -1,9 +1,5 @@
 package com.example.admin.trailerhire;
 
-/**
- * Created by admin on 2017/10/04.
- */
-
 public class Hire {
 
     private final double basicCost = 300;
@@ -37,7 +33,8 @@ public class Hire {
             return totalCost;
         }
         if(kiloMeters > 200){
-
+            totalCost -= amountDue*discount;
+            return totalCost;
         }
        return 0;
     }
