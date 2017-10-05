@@ -13,7 +13,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         /***** https://examples.javacodegeeks.com/android/core/view/onclicklistener/android-onclicklistener-example/ ***/
 
         trailer =(Button)findViewById(R.id.trailer);
