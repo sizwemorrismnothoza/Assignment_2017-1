@@ -43,7 +43,7 @@ public class Pay {
 
         }
         if(hour > 40 && rate >= ratePerHour){
-            double newRatePerHour = ratePerHour * 0.105;
+            double newRatePerHour = ratePerHour * 0.015;
             totalPay = hour * (ratePerHour + newRatePerHour);
 
         }
