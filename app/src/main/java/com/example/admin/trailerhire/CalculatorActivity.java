@@ -19,10 +19,7 @@ public class CalculatorActivity extends AppCompatActivity {
 
         entered_hours = (EditText)findViewById(R.id.edt_hours);
         entered_rate = (EditText)findViewById(R.id.edt_rates);
-
         total =(TextView)findViewById(R.id.total);
-
-
         calculate =(Button)findViewById(R.id.calculate);
         calculate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,7 +28,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 int hour = Integer.parseInt(entered_hours.getText().toString());
                 double rate = Double.parseDouble(entered_rate.getText().toString());
                 Pay x = new Pay(hour,rate);
-                total.setText("Total"+x.calculatePay());
+                total.setText("Total wage due R"+x.calculatePay());
             }
         });
 

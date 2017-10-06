@@ -5,42 +5,52 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_margin="64dp"
     tools:context="com.example.admin.trailerhire.OptionsActivity">
 
     <TextView
         android:text="Trailer Hire Information"
         android:gravity="center_horizontal"
+        android:textSize="25sp"
+        android:layout_marginBottom="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <TextView
         android:text="Basic cost  "
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        />
     <TextView
         android:text="R300"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"/>
 
 
     <TextView
         android:text="Surcharge for less than 40km travelled"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textStyle="bold"/>
     <TextView
         android:text="5 % of amount due added to total cost."
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"/>
 
     <TextView
         android:text="Discount for more than 200km travelled"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         />
     <TextView
         android:text="Get 11 % off"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"/>
 
 
 </LinearLayout>

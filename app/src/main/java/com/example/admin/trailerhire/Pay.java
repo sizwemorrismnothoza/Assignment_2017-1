@@ -48,10 +48,7 @@ public class Pay {
 
         }
         if(hour < 40 && rate >= ratePerHour){
-
             totalPay = hour * (ratePerHour - 0.05);
-
-
         }
         return totalPay;
 
